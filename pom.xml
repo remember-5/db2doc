@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.remember5.db2doc</groupId>
-    <artifactId>db2doc</artifactId>
+    <artifactId>db2docs</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
@@ -91,7 +91,7 @@
     </dependencies>
 
     <build>
-        <finalName>db2doc</finalName>
+        <finalName>db2docs</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

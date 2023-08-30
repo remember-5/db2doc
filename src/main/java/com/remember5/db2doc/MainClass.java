@@ -20,6 +20,7 @@ import com.remember5.db2doc.ui.MyGUI;
 import com.remember5.db2doc.utils.Db2DocUtils;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * @author wangjiahao
@@ -27,7 +28,7 @@ import javax.swing.*;
  */
 public class MainClass {
     public static void main(String[] args) {
-        JFrame jFrame = new JFrame("MyGUI");
+        JFrame jFrame = new JFrame("DB2Docs");
         final MyGUI myGUI = new MyGUI();
         for (DBEnum dbEnum : DBEnum.values()) {
             myGUI.getDbType().addItem(dbEnum.getDatabaseName());
@@ -35,10 +36,21 @@ public class MainClass {
         Db2DocUtils.GENERATE_TYPE_LIST.forEach(e -> {
             myGUI.getGenerateType().addItem(e);
         });
+
         jFrame.setContentPane(myGUI.getFdsa());
         jFrame.setVisible(true);
-//        jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setSize(500, 500);
+
+        // 将窗口定位在屏幕中央
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int screenWidth = screenSize.width;
+        int screenHeight = screenSize.height;
+        Dimension windowSize = jFrame.getSize();
+        int windowWidth = windowSize.width;
+        int windowHeight = windowSize.height;
+        int x = (screenWidth - windowWidth) / 2;
+        int y = (screenHeight - windowHeight) / 2;
+        jFrame.setLocation(x, y);
     }
 }

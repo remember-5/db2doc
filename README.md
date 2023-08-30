@@ -7,7 +7,31 @@ GUI方式的数据库生成文档，降低了门槛，运维人员和产品经�
 ![](./docs/2.jpg)
 ![](./docs/3.jpg)
 
+## 文档截图
 
++ **html**
+
+<p align="center">
+   <img alt="HTML" src="https://images.gitee.com/uploads/images/2020/0622/161414_74cd0b68_1407605.png">
+</p>
+<p align="center">
+   <img alt="screw-logo" src="https://images.gitee.com/uploads/images/2020/0622/161723_6da58c41_1407605.png">
+</p>
+
++ **word**
+
+<p align="center">
+   <img alt="word" src="https://images.gitee.com/uploads/images/2020/0625/200946_1dc0717f_1407605.png">
+</p>
+
++ **markdwon**
+
+<p align="center">
+   <img alt="markdwon" src="https://images.gitee.com/uploads/images/2020/0625/214749_7b15d8bd_1407605.png">
+</p>
+<p align="center">
+   <img alt="markdwon" src="https://images.gitee.com/uploads/images/2020/0625/215006_3601e135_1407605.png">
+</p>
 
 - 启动环境: 需要安装 jdk1.8+ 
 - 支持数据库类型: Mysql,MariaDB,TIDB,Oracle,SqlServer,PostgreSQL
